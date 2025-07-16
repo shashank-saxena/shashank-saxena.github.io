@@ -137,6 +137,7 @@ section.resume-section .resume-item .resume-date {
 
 a {
   color: #BD5D38;
+  text-decoration: none;
 }
 a:hover, a:focus, a:active {
   color: rgb(129.9857142857, 63.9612244898, 38.5142857143);
