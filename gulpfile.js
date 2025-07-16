@@ -1,14 +1,14 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var browserSync = require('browser-sync').create();
-var header = require('gulp-header');
-var cleanCSS = require('gulp-clean-css');
-var rename = require("gulp-rename");
-var uglify = require('gulp-uglify');
-var pkg = require('./package.json');
+const gulp = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+const browserSync = require('browser-sync').create();
+const header = require('gulp-header');
+const cleanCSS = require('gulp-clean-css');
+const rename = require("gulp-rename");
+const uglify = require('gulp-uglify');
+const pkg = require('./package.json');
 
 // Set the banner content
-var banner = ['/*!\n',
+const banner = ['/*!\n',
   ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
   ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
   ' * Licensed under <%= pkg.license %> (https://github.com/BlackrockDigital/<%= pkg.name %>/blob/master/LICENSE)\n',
@@ -18,7 +18,7 @@ var banner = ['/*!\n',
 
 // Compiles SCSS files from /scss into /css
 gulp.task('sass', function() {
-  return gulp.src('scss/resume.scss')
+  return gulp.src('scss/*.scss')
     .pipe(sass())
     .pipe(header(banner, {
       pkg: pkg
@@ -30,8 +30,8 @@ gulp.task('sass', function() {
 });
 
 // Minify compiled CSS
-gulp.task('minify-css', gulp.series('sass'), function() {
-  return gulp.src('css/resume.css')
+gulp.task('minify-css', gulp.series('sass', function() {
+  return gulp.src(['css/*.css', '!css/*.min.css'])
     .pipe(cleanCSS({
       compatibility: 'ie8'
     }))
@@ -42,11 +42,11 @@ gulp.task('minify-css', gulp.series('sass'), function() {
     .pipe(browserSync.reload({
       stream: true
     }))
-});
+}));
 
 // Minify custom JS
 gulp.task('minify-js', function() {
-  return gulp.src('js/resume.js')
+  return gulp.src(['js/*.js', '!js/*.min.js'])
     .pipe(uglify())
     .pipe(header(banner, {
       pkg: pkg
@@ -111,15 +111,27 @@ gulp.task('browserSync', function() {
     server: {
       baseDir: './'
     },
-  })
-})
+    port: 3001
+  });
+  // done(); // necessary for gulp to continue
+});
 
 // Dev task with browserSync
-gulp.task('dev', gulp.series('browserSync', 'sass', 'minify-css', 'minify-js'), function() {
-  gulp.watch('scss/*.scss', ['sass']);
-  gulp.watch('css/*.css', ['minify-css']);
-  gulp.watch('js/*.js', ['minify-js']);
-  // Reloads the browser whenever HTML or JS files change
-  gulp.watch('*.html', browserSync.reload);
-  gulp.watch('js/**/*.js', browserSync.reload);
-});
+// gulp.task('dev', gulp.series('browserSync', 'sass', 'minify-css', 'minify-js'), function() {
+//   gulp.watch('scss/*.scss', ['sass']);
+//   gulp.watch('css/*.css', ['minify-css']);
+//   gulp.watch('js/*.js', ['minify-js']);
+//   // Reloads the browser whenever HTML or JS files change
+//   gulp.watch('*.html', browserSync.reload);
+//   gulp.watch('js/**/*.js', browserSync.reload);
+//   gulp.watch('css/*.css', browserSync.reload);
+// });
+
+gulp.task('dev', gulp.series('browserSync', 'sass', 'minify-css', 'minify-js', function devWatch() {
+  gulp.watch('scss/*.scss', gulp.series('sass'));
+  gulp.watch('css/*.css', gulp.series('minify-css'));
+  gulp.watch('js/*.js', gulp.series('minify-js'));
+  gulp.watch('*.html').on('change', browserSync.reload);
+  gulp.watch('js/**/*.js').on('change', browserSync.reload);
+  gulp.watch('css/*.css').on('change', browserSync.reload);
+}));

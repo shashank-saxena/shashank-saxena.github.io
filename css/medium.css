@@ -1,0 +1,146 @@
+.mainbox {
+	/* padding: 15px 0 15px 0; */
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.col-centered {
+	float: none;
+	margin: 0 auto;
+}
+
+.profile_img {
+	padding-right: 20px;
+	flex-direction: row;
+	display: flex;
+}
+
+.u {
+	flex-grow: 1;
+}
+
+.dm {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.dn {
+	justify-content: flex-start;
+	flex-direction: row;
+	display: flex;
+}
+
+.dr {
+	margin-left: 20px;
+	flex-direction: column;
+	justify-content: center;
+	display: flex;
+}
+
+.dp {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: block;
+}
+
+
+/* img, svg {
+    vertical-align: middle;
+  } */
+
+.bx {
+	fill: rgba(0, 0, 0, 0.84);
+	color: rgba(0, 0, 0, 0.84);
+	display: block;
+	letter-spacing: 0px;
+	font-size: 15.8px;
+	line-height: 20px;
+	font-style: normal;
+	font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+	font-weight: 600;
+}
+
+.af {
+	fill: rgba(0, 0, 0, 0.54);
+	color: rgba(0, 0, 0, 0.54);
+	display: block;
+	letter-spacing: 0px;
+	font-size: 15.8px;
+	line-height: 20px;
+	font-style: normal;
+	font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+	font-weight: 400;
+}
+
+.dsbox {
+	/* padding-left: 20px; */
+	/* padding-right: 20px; */
+}
+
+.dubox {
+	margin: auto;
+	max-width: 700px;
+	position: relative;
+    height: 175px;
+    overflow: hidden;
+}
+
+.dvbox {
+	/* padding-bottom: 30%; */
+}
+
+.bhbox {
+    border-radius: 5px 5px 0 0;
+	height: auto;
+	left: 0;
+	top: 0;
+	/* position: absolute; */
+	width: 100%;
+}
+
+.eafont {
+    min-height: 100px;
+	padding: 15px;
+	font-weight: 600;
+}
+
+.blog-cont {
+	/* padding-top: 20px; */
+}
+
+.blog-cont p {
+	color: #67666a;
+	line-height: 22px;
+}
+
+.dsbox a:visited {
+	/* color:red; */
+	border-bottom-color: white !important;
+}
+
+a:visited {
+	/* color:red; */
+	/* border-bottom-color:white !important;  */
+}
+
+.dsbox a:hover {
+	color: #056797;
+	border-bottom-color: white !important;
+	text-decoration: none;
+}
+
+img {
+	vertical-align: bottom;
+	max-width: 100%;
+	height: auto;
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+
+.pt-page-current *,
+.no-js .pt-page * {
+	height: auto;
+}

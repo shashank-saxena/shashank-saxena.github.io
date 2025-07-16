@@ -16,13 +16,16 @@
 
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"
+    >
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet">
+    <link href="css/resume.css" rel="stylesheet">
+
+    <link href="css/medium.css" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124443544-1"></script>
@@ -34,6 +37,15 @@
       gtag('config', 'UA-124443544-1');
     </script>
 
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", (event) => {
+        var initialDate = new Date("2013-05-13");
+        var currentDate = new Date();
+        var elapsedTimeInYrs = parseInt(((((currentDate - initialDate)/1000)/(60*60))/24)/365);
+        // document.getElementById("exp-time").innerHTML = elapsedTimeInYrs;
+      });
+    </script>
+
   </head>
 
   <body id="page-top">
@@ -42,7 +54,7 @@
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Portfolio</span>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.png" alt="">
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,9 +77,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-          </li> -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#blogs">Blogs</a>
+          </li>
           <!-- <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
           </li> -->
@@ -85,11 +97,17 @@
           <div class="subheading mb-5">Indore, Madhya Pradesh - 452001 ·
             <a href="mailto:me@shashank-saxena.com">me@shashank-saxena.com</a>
           </div>
-          <p class="mb-5">Ambitious and self motivated full stack developer with experience in chatbots development
+          <class="mb-5">
+            <b>Engineer with precision. Debugger with grit. Architect in progress.</b>
             <br/><br/>
-            My professional experience includes leading the definition of good design all while considering the product life cycle, from requirement to deployment. I have 7+ years working experience in agile and scrum environments on multiple range of products with silicon valley startups.
+
+            Full-Stack Engineer | Cloud-Native Systems | MLOps & Scalable Architecture <br/><br/>
+
+            I’m a systems-minded full-stack engineer with a sharp focus on building efficient, production-grade solutions—whether that means scalable APIs, distributed job queues, or full-blown DevOps pipelines on GCP or AWS.
+
             <br/><br/>
-            I spend a large amount of my free time exploring the latest technolgy advancements. I always try to push the boundaries to make sure the product satisfy all the requirements while ensuring high standards.</p>
+            I don’t just write code—I design for maintainability, resilience, and real-world complexity. From microservices to AI workflows and event-driven AWS architectures (SQS, Lambda, etc.), I bring the engineering maturity to move fast without leaving tech debt behind.
+          </p>
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
               <a href="https://www.facebook.com/shashank.saxena077">
@@ -123,6 +141,15 @@
                 </span>
               </a>
             </li>
+
+            <li class="list-inline-item">
+              <a href="https://shashank-saxena.medium.com/">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
           </ul>
         </div>
       </section>
@@ -133,12 +160,34 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Lead Technical Consultant</h3>
-              <div class="subheading mb-3">Bellurbis Technologies Pvt. Ltd.</div>
-              <p>I have worked here as a Team Lead managed 3 clients which comprise managing teams, sprint planning, delivery management, requirement analysis, technical system design. I have a worked with alomst 18 people across the project.</p>
+              <h3 class="mb-0">Tech Architect</h3>
+              <div class="subheading mb-3">Ccube Pvt. Ltd.</div>
+              <p>As a Tech Architect, I am focused on building/migrating scalable & efficient systems across cloud, backend, and MLOps. I bridge business goals with real-world engineering, avoiding bloat and driving clarity.</p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">January 2020 - Present</span>
+              <span class="text-primary">April 2025 - Present</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Project Lead</h3>
+              <div class="subheading mb-3">Newput Infotech Pvt. Ltd.</div>
+              <p>In my role as a Team Lead, I've had the privilege of overseeing multiple clients, which has encompassed critical responsibilities such as team management, sprint planning, delivery management and requirement analysis. Over the course of my leadership, I've had the opportunity to collaborate with a diverse and talented team across different projects.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">January 2021 - March 2025</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Lead Technical Consultant</h3>
+              <div class="subheading mb-3">Bellurbis Technologies Pvt. Ltd.</div>
+              <p>I have worked here as a Team Lead managed multiple clients which comprise managing teams, sprint planning, delivery management, requirement analysis, technical system design. I have worked with nearly 18 people across the projects.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">January 2020 - January 2021</span>
             </div>
           </div>
 
@@ -146,7 +195,7 @@
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Senior Software Engineer</h3>
               <div class="subheading mb-3">Barclays (BGSC)</div>
-              <p>I worked here as a full stack developer, primarily involved in the development of an mortgage application.</p>
+              <p>I worked here as a full stack developer, primarily involved in the development of an mortgage product.</p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">December 2018 - January 2020</span>
@@ -207,27 +256,83 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5" id="project-marketplace-camps">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Team Lead</h3>
-              <div class="subheading mb-3">Nirman app - Aavas</div>
-              <p>It’s an android app mainly used by bank employees to track their worklogs, manage their sales records and leads management</p>
+              <h3 class="mb-0">Tech Lead</h3>
+              <div class="subheading mb-3">Tinyview</div>
+              <p>It’s an android app mainly used by bank employees to track their work logs to manage their sales records and leads management</p>
 
               <p>Implementations:</p>
               <ul>
-                <li>Sprint planning and daily scrum</li>
-                <li>Handled backend and app side tasks and managed a team of 5 members</li>
-                <li>Delivery management for new features development</li>
+                <li>Sprint planning and scrum management</li>
+                <li>Handled backend and app side tasks with a team of 5 members</li>
+                <li>Release management for new features</li>
               </ul>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Aug 2020 - Present</span>
+            <!-- <div class="resume-date text-md-right">
+              <span class="text-primary">Aug 2020 - Jan 2021</span>
+            </div> -->
+          </div>
+
+
+
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5" id="project-marketplace-camps">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Technical Consultant</h3>
+              <div class="subheading mb-3">Bidgely</div>
+              <p>Bidgely is an energy intelligence company that gives its customers unique behind the meter insights and the solutions platform to analyze the usage.</p>
+
+              <p>Implementations:</p>
+              <ul>
+                <li>Analytics module development with <a href="https://react.dev/">React JS</a>.</li>
+                <li>Designed widgetization of the existing modules. </li>
+              </ul>
             </div>
+            <!-- <div class="resume-date text-md-right">
+              <span class="text-primary">Aug 2021 - March 2023</span>
+            </div> -->
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5" id="project-marketplace-camps">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Team Lead</h3>
+              <h3 class="mb-0">Tech Lead</h3>
+              <div class="subheading mb-3">Cross border payment integration</div>
+              <p>Bidgely is an energy intelligence company that gives its customers unique behind the meter insights and the solutions platform to analyze the usage.</p>
+
+              <p>Implementations:</p>
+              <ul>
+                <li>Analytics module development with <a href="https://react.dev/">React JS</a>.</li>
+                <li>Designed widgetization of the existing modules. </li>
+              </ul>
+            </div>
+            <!-- <div class="resume-date text-md-right">
+              <span class="text-primary">Jan 2021 - Dec 2021</span>
+            </div> -->
+          </div>
+
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5" id="project-marketplace-camps">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Tech Lead</h3>
+              <div class="subheading mb-3">Nirman app - Aavas</div>
+              <p>It’s an android app mainly used by bank employees to track their work logs to manage their sales records and leads management</p>
+
+              <p>Implementations:</p>
+              <ul>
+                <li>Sprint planning and scrum management</li>
+                <li>Handled backend and app side tasks with a team of 5 members</li>
+                <li>Release management for new features</li>
+              </ul>
+            </div>
+            <!-- <div class="resume-date text-md-right">
+              <span class="text-primary">Aug 2020 - Jan 2021</span>
+            </div> -->
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5" id="project-marketplace-camps">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Tech Lead</h3>
               <div class="subheading mb-3">Android app for customer - NTT Netmagic</div>
-              <p>This system developed mainly for NTT customers to track their resources and assets. And a quick access to their service based solutions.</p>
+              <p>This app developed mainly for NTT customers to track their resources and assets. And a quick access to their service based solutions.</p>
 
               <p>Implementations:</p>
               <ul>
@@ -238,16 +343,16 @@
                 <li>Sprint planning and daily scrum management for a team of 12 people</li>
               </ul>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Mar 2020 - Present</span>
-            </div>
+            <!-- <div class="resume-date text-md-right">
+              <span class="text-primary">Mar 2020 - Jan 2021</span>
+            </div> -->
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5" id="project-marketplace-camps">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Team Lead</h3>
-              <div class="subheading mb-3">Voice Enabled Chatbot</div>
-              <p>It's a platform for creating and managing chatbots with voice feature, along with integration with multiple channels(Messenger, Slack, Webchat).</p>
+              <h3 class="mb-0">Individual Contributor</h3>
+              <div class="subheading mb-3">Voice Enabled Chatbot(In house POC)</div>
+              <p>It's a platform for creating and managing chatbot with voice feature, along with integration with multiple channels(Messenger, Slack, Web chat).</p>
 
               <p>Implementations:</p>
               <ul>
@@ -256,9 +361,9 @@
                 <li>Sprint planning and delivery management</li>
               </ul>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Jan 2020 - Present</span>
-            </div>
+            <!-- <div class="resume-date text-md-right">
+              <span class="text-primary">Jan 2020 - May 2020</span>
+            </div> -->
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5" id="project-marketplace-camps">
@@ -270,12 +375,12 @@
               <p>Implementations:</p>
               <ul>
                 <li>Bug fixes and feature develop for the existing project</li>
-                <li>Worked on multiple associated projects</li>
+                <li>Worked on multiple associated modules</li>
               </ul>
             </div>
-            <div class="resume-date text-md-right">
+            <!-- <div class="resume-date text-md-right">
               <span class="text-primary">Dec 2018 - Dec 2019</span>
-            </div>
+            </div> -->
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5" id="project-marketplace-camps">
@@ -294,16 +399,16 @@
                 <li>Implemented authentication via JWT</li>
               </ul>
             </div>
-            <div class="resume-date text-md-right">
+            <!-- <div class="resume-date text-md-right">
               <span class="text-primary">May 2018 - Dec 2018</span>
-            </div>
+            </div> -->
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5" id="project-marketplace-camps">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Full Stack Developer</h3>
               <div class="subheading mb-3">Marketplace for camps and activities</div>
-              <p>Silicon Valley-based VC-funded startup, its an online marketplace for activities and camps nearby. Developed using RoR and AngularJS, the app provides a searchable catalog and ability to book activities and camps.</p>
+              <p>Silicon Valley based VC funded startup, its an online marketplace of activities and camps for kids. Developed using RoR and AngularJS, the app provides a searchable catalog and ability to book activities and camps.</p>
 
               <p>Implementations:</p>
               <ul>
@@ -314,16 +419,16 @@
                 <li>Developed widgets to integrate on 3rd party websites</li>
               </ul>
             </div>
-            <div class="resume-date text-md-right">
+            <!-- <div class="resume-date text-md-right">
               <span class="text-primary">October 2015 - October 2018</span>
-            </div>
+            </div> -->
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Chatbot &amp; UI Developer</h3>
+              <h3 class="mb-0">ITSM bot &amp; UI Developer</h3>
               <div class="subheading mb-3">Stealth mode AI startup</div>
-              <p>It’s a multi-tenant bots system which serves messages coming from multiple channels hosted on different clusters. In this i have developed bots on Facebook, Slack, Webchat.</p>
+              <p>It’s a multi-tenant bots system which serves messages coming from multiple channels hosted on different clusters. In this, I have developed bots on Facebook, Slack, Web chat.</p>
 
               <p>Implementations:</p>
               <ul>
@@ -332,15 +437,15 @@
                 <li>Developed authentication component tied up with chat platforms</li>
               </ul>
             </div>
-            <div class="resume-date text-md-right">
+            <!-- <div class="resume-date text-md-right">
               <span class="text-primary">September 2017 - May 2018</span>
-            </div>
+            </div> -->
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5" id="project-fb-chatbot">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Full Stack Developer</h3>
-              <div class="subheading mb-3">Service provider bot</div>
+              <div class="subheading mb-3">CSM bot</div>
               <p>It’s a bot on Facebook Messenger to find the nearby best provider for home maintenance and repairs. It will also able serve some tips with details.</p>
 
               <p>Implementations:</p>
@@ -353,31 +458,31 @@
               </ul>
 
             </div>
-            <div class="resume-date text-md-right">
+            <!-- <div class="resume-date text-md-right">
               <span class="text-primary">February 2017 - May 2017</span>
-            </div>
+            </div> -->
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5" id="project-bitcovery">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">UI &amp; UX Developer</h3>
               <div class="subheading mb-3">Bitcovery</div>
-              <p>Bitcovery was a Silicon Valley-based startup which launched at TechCrunch Disrupt Battlefield 2013. Bitcovery is a social discovery layer to the iTunes store. The product helps the user to search iTunes store, preview content, network with friends, make wishlist, participate in sweepstakes and get updates about expert recommendations.</p>
+              <p>Bitcovery was a Silicon Valley-based startup which was launched at TechCrunch Disrupt Battlefield 2013. Bitcovery is a social discovery app to the iTunes store. The product helps the user to search iTunes store, preview content, network with friends, create wishlist, participate in sweepstakes and get updates about expert recommendations.</p>
 
               <p>Implementations:</p>
               <ul>
                 <li>Worked with Spring MVC which interacts with the backend REST services</li>
                 <li>Developed framework design for this rich client application using Javascript and jQuery</li>
                 <li>Developed widgets to integrate on 3rd party websites</li>
-                <li>Worked with FB Javascript SDK for managing signups</li>
+                <li>Worked with FB Javascript SDK for managing signup</li>
               </ul>
             </div>
-            <div class="resume-date text-md-right">
+            <!-- <div class="resume-date text-md-right">
               <span class="text-primary">July 2013 - October 2015</span>
-            </div>
+            </div> -->
           </div>
 
-          <div class="resume-item d-flex flex-column flex-md-row" id="project-nb">
+          <!-- <div class="resume-item d-flex flex-column flex-md-row" id="project-nb">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Full Stack Developer</h3>
               <div class="subheading mb-3">NamkeenBazaar</div>
@@ -393,7 +498,7 @@
             <div class="resume-date text-md-right">
               <span class="text-primary">June 2012 - April 2013</span>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
@@ -433,6 +538,26 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
           <h2 class="mb-5">Skills</h2>
+
+          <div>
+            <div class="subheading mb-3">Cloud Services</div>
+            <ul class="list-inline list-icons">
+              <li class="list-inline-item">
+                <a href="https://www.aws.com/">
+                  <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none" width="48" height="48">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#bd5d38" d="M4.51 7.687c0 .197.02.357.058.475.042.117.096.245.17.384a.233.233 0 01.037.123c0 .053-.032.107-.1.16l-.336.224a.255.255 0 01-.138.048c-.054 0-.107-.026-.16-.074a1.652 1.652 0 01-.192-.251 4.137 4.137 0 01-.165-.315c-.415.491-.936.737-1.564.737-.447 0-.804-.129-1.064-.385-.261-.256-.394-.598-.394-1.025 0-.454.16-.822.484-1.1.325-.278.756-.416 1.304-.416.18 0 .367.016.564.042.197.027.4.07.612.118v-.39c0-.406-.085-.689-.25-.854-.17-.166-.458-.246-.868-.246-.186 0-.377.022-.574.07a4.23 4.23 0 00-.575.181 1.525 1.525 0 01-.186.07.326.326 0 01-.085.016c-.075 0-.112-.054-.112-.166v-.262c0-.085.01-.15.037-.186a.399.399 0 01.15-.113c.185-.096.409-.176.67-.24.26-.07.537-.101.83-.101.633 0 1.096.144 1.394.432.293.288.442.726.442 1.314v1.73h.01zm-2.161.811c.175 0 .356-.032.548-.096.191-.064.362-.182.505-.342a.848.848 0 00.181-.341c.032-.129.054-.283.054-.465V7.03a4.43 4.43 0 00-.49-.09 3.996 3.996 0 00-.5-.033c-.357 0-.618.07-.793.214-.176.144-.26.347-.26.614 0 .25.063.437.196.566.128.133.314.197.559.197zm4.273.577c-.096 0-.16-.016-.202-.054-.043-.032-.08-.106-.112-.208l-1.25-4.127a.938.938 0 01-.049-.214c0-.085.043-.133.128-.133h.522c.1 0 .17.016.207.053.043.032.075.107.107.208l.894 3.535.83-3.535c.026-.106.058-.176.1-.208a.365.365 0 01.214-.053h.425c.102 0 .17.016.213.053.043.032.08.107.101.208l.841 3.578.92-3.578a.458.458 0 01.107-.208.346.346 0 01.208-.053h.495c.085 0 .133.043.133.133 0 .027-.006.054-.01.086a.76.76 0 01-.038.133l-1.283 4.127c-.032.107-.069.177-.111.209a.34.34 0 01-.203.053h-.457c-.101 0-.17-.016-.213-.053-.043-.038-.08-.107-.101-.214L8.213 5.37l-.82 3.439c-.026.107-.058.176-.1.213-.043.038-.118.054-.213.054h-.458zm6.838.144a3.51 3.51 0 01-.82-.096c-.266-.064-.473-.134-.612-.214-.085-.048-.143-.101-.165-.15a.378.378 0 01-.031-.149v-.272c0-.112.042-.166.122-.166a.3.3 0 01.096.016c.032.011.08.032.133.054.18.08.378.144.585.187.213.042.42.064.633.064.336 0 .596-.059.777-.176a.575.575 0 00.277-.508.52.52 0 00-.144-.373c-.095-.102-.276-.193-.537-.278l-.772-.24c-.388-.123-.676-.305-.851-.545a1.275 1.275 0 01-.266-.774c0-.224.048-.422.143-.593.096-.17.224-.32.384-.438.16-.122.34-.213.553-.277.213-.064.436-.091.67-.091.118 0 .24.005.357.021.122.016.234.038.346.06.106.026.208.052.303.085.096.032.17.064.224.096a.46.46 0 01.16.133.289.289 0 01.047.176v.251c0 .112-.042.171-.122.171a.552.552 0 01-.202-.064 2.427 2.427 0 00-1.022-.208c-.303 0-.543.048-.708.15-.165.1-.25.256-.25.475 0 .149.053.277.16.379.106.101.303.202.585.293l.756.24c.383.123.66.294.825.513.165.219.244.47.244.748 0 .23-.047.437-.138.619a1.436 1.436 0 01-.388.47c-.165.133-.362.23-.591.299-.24.075-.49.112-.761.112z"></path> <g fill="#bd5d38" fill-rule="evenodd" clip-rule="evenodd"> <path d="M14.465 11.813c-1.75 1.297-4.294 1.986-6.481 1.986-3.065 0-5.827-1.137-7.913-3.027-.165-.15-.016-.353.18-.235 2.257 1.313 5.04 2.109 7.92 2.109 1.941 0 4.075-.406 6.039-1.239.293-.133.543.192.255.406z"></path> <path d="M15.194 10.98c-.223-.287-1.479-.138-2.048-.069-.17.022-.197-.128-.043-.24 1-.705 2.645-.502 2.836-.267.192.24-.053 1.89-.99 2.68-.143.123-.281.06-.218-.1.213-.53.687-1.72.463-2.003z"></path> </g> </g>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.cloud.google.com/">
+                  <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none" width="48" height="48">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#bd5d38" d="M10.313 5.376l1.887-1.5-.332-.414a5.935 5.935 0 00-5.586-1.217 5.89 5.89 0 00-3.978 4.084c-.03.113.312-.098.463-.056l2.608-.428s.127-.124.201-.205c1.16-1.266 3.126-1.432 4.465-.354l.272.09z"></path><path fill="#bd5d38" d="M13.637 6.3a5.835 5.835 0 00-1.77-2.838l-1.83 1.82a3.226 3.226 0 011.193 2.564v.323c.9 0 1.63.725 1.63 1.62 0 .893-.73 1.619-1.63 1.619l-3.257-.003-.325.035v2.507l.325.053h3.257a4.234 4.234 0 004.08-2.962A4.199 4.199 0 0013.636 6.3z"></path><path fill="#bd5d38" d="M4.711 13.999H7.97v-2.594H4.71c-.232 0-.461-.066-.672-.161l-.458.14-1.313 1.297-.114.447a4.254 4.254 0 002.557.87z"></path><path fill="#bd5d38" d="M4.711 5.572A4.234 4.234 0 00.721 8.44a4.206 4.206 0 001.433 4.688l1.89-1.884a1.617 1.617 0 01.44-3.079 1.63 1.63 0 011.714.936l1.89-1.878A4.24 4.24 0 004.71 5.572z"></path></g>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
 
           <div>
             <div class="subheading mb-3">Web Technologies</div>
@@ -554,13 +679,12 @@
         </div>
       </section>
 
-      <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="blogs">
         <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
-          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and </p>
+          <h2 class="mb-5">Blogs</h2>
+          <div id="jsonContent"></div>
         </div>
-      </section> -->
+      </section>
 
       <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
@@ -607,7 +731,9 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
+    <script src="js/resume.js"></script>
+
+    <script src="js/medium.js"></script>
   </body>
 
 </html>
